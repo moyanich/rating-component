@@ -35,6 +35,10 @@ a {
   color: inherit;
 }
 
+.bg-dark {
+  background-color: #121417;
+}
+
 .text-white {
   color: white;
 }
@@ -67,6 +71,23 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
+}
+
+.container {
+  height: 100vh;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /*
