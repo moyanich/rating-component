@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/// Container's maximum width
+$max-width: 1440px !default;
+$mobile-width: 375px;
+
+// Colors
+// Primary
+
+$color-orange: hsl(25, 97%, 53%);
+
+// Neutral
+$color-white: hsl(0, 0%, 100%);
+$color-light-grey: hsl(217, 12%, 63%);
+$color-medium-grey: hsl(216, 12%, 54%);
+$color-dark-blue: hsl(213, 19%, 18%);
+$color-very-dark-blue: hsl(216, 12%, 8%);
+
+// Typography
+// Body Copy
+
+$text-color: $color-dark-blue !default;
+$fs-default: 15px;
+
+
+// Font
+$text-main-font: 'Overpass', sans-serif;
+$fw-400: 400;
+$fw-700: 700;

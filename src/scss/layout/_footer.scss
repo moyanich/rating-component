@@ -1,0 +1,32 @@
+footer {
+	background-color: #90d3c4;
+	padding: 6rem;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+
+	.logo img {
+		filter: brightness(0) saturate(100%) invert(26%) sepia(18%) saturate(1123%) hue-rotate(116deg) brightness(100%) contrast(90%);
+	}
+}
+
+.footer-nav,
+.social-nav {
+	ul {
+		gap: 3rem;
+
+		li {
+
+			a {
+				color: $color-dark-moderate-cyan;
+				font-weight: $fw-600;
+			}
+		}
+	}
+}
+
+
+.social-nav ul {
+      padding-top: 3rem;
+	gap: 2rem;
+}

@@ -1,0 +1,64 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	font-family: $text-main-font;
+	font-size: $fs-default;
+	color: $text-color;
+	line-height: 1.5;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.text-white {
+      color: $color-white;
+}
+
+.text-center {
+      text-align: center;
+}
+
+
+.uppercase {
+      text-transform: uppercase;
+}
+.container {
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.pb-3 {
+    padding-bottom: 3rem;
+}
+

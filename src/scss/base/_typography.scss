@@ -1,0 +1,19 @@
+// Typography rules
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.2;
+	//font-family: $text-main-font;
+	//font-weight: $fw-600;
+}
+
+
+
+
+@media (min-width: $mobile-width) and (max-width: $max-width) {
+     
+}

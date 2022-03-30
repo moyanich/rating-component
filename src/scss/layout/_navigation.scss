@@ -1,0 +1,166 @@
+.main-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	color: $color-white;
+
+      .nav-links {
+           
+            ul {
+				list-style: none;
+				display: flex;
+				align-items: center;
+				gap: 3rem;
+
+                  li {
+
+                        a {
+							font-size: 18px;
+							font-family: $text-body-font;
+							font-weight: 600;
+							color: $color-white;
+                        }
+                  }
+                  
+            }
+      }
+}
+
+ 
+.mobile-menu {
+    display: none;
+}
+
+.open {
+     
+	.mobile-menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		position: absolute;
+		width: 90%;
+		top: 150px;
+		right: 20px;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		background: $color-white;
+
+		&:after {
+			content: "";
+			height: 0;
+			width: 0;
+			border-bottom: 50px solid #fff;
+			border-left: 50px solid transparent;
+			position: absolute;
+			top: -50px;
+			right: 0;
+		}
+		
+		li {
+			padding-bottom: 2rem;
+			a {
+				color: $color-dark-grayish-blue;
+			}
+		}
+	}
+}
+
+//@media (min-width: $mobile-width) and (max-width: $max-width) {
+@media (max-width: $max-width) {
+	#hamburger-icon {
+		display: block;
+	}
+	header nav {
+		display: none;
+	}
+}
+
+@media (min-width: 767px) {
+	#hamburger-icon {
+		display: none;
+	}
+	header nav {
+		display: block;
+	}
+}
+
+
+/*
+#hamburger-icon {
+      margin: auto 0;
+      display: none;
+      position: relative;
+      cursor: pointer;
+
+      div {
+            width: 30px;
+            height: 2px;
+            background-color: white;
+            margin: 6px 0;
+            transition: 0.4s;
+      }
+}
+
+.open {
+      .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+            transform: rotate(-45deg) translate(-6px, 6px);
+      }
+
+      .bar2 {
+            opacity: 0;
+      }
+
+      .bar3 {
+            -webkit-transform: rotate(45deg) translate(-6px, -8px);
+            transform: rotate(45deg) translate(-6px, -8px);
+      }
+
+      .mobile-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 300px;
+            top: 110px;
+            position: absolute;
+            right: 0;
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+            background: $color-white;
+            
+            li {
+                  padding-bottom: 1rem;
+                  a {
+                        color: $color-dark-grayish-blue;
+                  }
+            }
+      }
+}
+
+ 
+.mobile-menu {
+      display: none;
+
+     
+      &:before {
+            content: "";
+            height: 0;
+            width: 0;
+            border-bottom: 50px solid $color-white;
+            border-left: 50px solid transparent;
+            position: absolute;
+            top: -50px;
+            right: 0;
+       
+      }
+
+      li {
+            margin-bottom: 10px;
+      }
+}
+
+*/
+

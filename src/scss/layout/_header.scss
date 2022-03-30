@@ -1,0 +1,31 @@
+header {
+	background-image: url("../../src/images/desktop/image-header.jpg");
+	background-position: center bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #3dbeff;
+   	height: 44.45em;
+}
+
+.heading {
+	&-content {
+		padding-top: 6rem;
+	}
+	&-text {
+		letter-spacing: 0.15em;
+	}
+}
+
+.arrow-down {
+	padding-top: 10.5rem;
+}
+
+@media (min-width: $mobile-width) and (max-width: $max-width) {
+	header {
+		background-image: url("../../src/images/mobile/image-header.jpg");
+	}
+
+	.arrow-down {
+		padding-top: 3rem;
+	}
+}
