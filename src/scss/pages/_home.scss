@@ -1,5 +1,5 @@
 .star {
-	
+	margin-bottom: 1rem;
 }
 
 .star_image {
@@ -10,15 +10,15 @@
 }
 
 .card {
-	background-color: blue;
+	background: rgb(37,45,55);
+	background: radial-gradient(circle at top, rgba(37,45,55,1) 0%, rgba(18,20,23,1) 100%);
 	border-radius: 20px;
 	padding: 2rem;
 	width: 90%;
-	
 }
 
 .state {
-	display: none;
+	//display: none;
 }
 
 ul {
@@ -31,12 +31,23 @@ ul {
 		align-items: center;
 		justify-content: center;
 		//background: rgba(124, 135, 152, 0.1);
-		background-color: $color-orange;
+		background-color: $color-dark-blue;
 		color: $color-light-grey;
-		height: 2.35rem;
-		width: 2.35rem;
-		padding: 1rem;
+		height: 2.8rem;
+		width: 2.8rem;
+		//padding: 1rem;
 		border-radius: 100px;
 		cursor: pointer;
+
+		&:hover {
+			color: $color-white;
+            	background-color: $color-orange;
+		}
+	}
+}
+
+@media (min-width: 767px) {
+	.card {
+		width: 100%;
 	}
 }
