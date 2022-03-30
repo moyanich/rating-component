@@ -48,6 +48,10 @@ a {
   padding-top: 2rem;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   font-family: "Overpass", sans-serif;
   font-size: 15px;
@@ -105,13 +109,18 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:focus, button:hover {
   background-color: white;
   color: #fb7413;
 }
 
 .star {
   margin-bottom: 1rem;
+}
+
+.rating-state {
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
 }
 
 .star_image {
@@ -126,6 +135,20 @@ button:hover {
   border-radius: 20px;
   padding: 2rem;
   width: 90%;
+}
+
+.state {
+  margin-top: 2rem;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+.state .rating-container {
+  display: inline;
+  color: #fb7413;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  background-color: #252d37;
 }
 
 ul {
@@ -156,7 +179,7 @@ ul li {
   cursor: pointer;
 }
 
-ul li:hover {
+ul li:focus, ul li:hover {
   color: white;
   background-color: #fb7413;
 }

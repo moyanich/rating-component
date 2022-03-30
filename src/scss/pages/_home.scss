@@ -2,6 +2,9 @@
 	margin-bottom: 1rem;
 }
 
+.rating-state {
+	transition: opacity 250ms;
+}
 .star_image {
 	background-color: $color-dark-blue;
 	padding: 15px;
@@ -19,7 +22,20 @@
 
 .state {
 	//display: none;
+	margin-top: 2rem;
+	transition: opacity 250ms;
+
+	.rating-container {
+		display: inline;
+		color: $color-orange;
+		padding: 0.5rem 1rem;
+		border-radius: 100px;
+		background-color: $color-dark-blue;
+	}
 }
+
+
+
 
 ul {
 	list-style: none;
@@ -39,12 +55,14 @@ ul {
 		border-radius: 100px;
 		cursor: pointer;
 
+		&:focus,
 		&:hover {
 			color: $color-white;
             	background-color: $color-orange;
 		}
 	}
 }
+
 
 @media (min-width: 767px) {
 	.card {

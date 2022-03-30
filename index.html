@@ -25,24 +25,28 @@
 				<p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
 				<div class="ratings pt-2">
-					<ul>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
+					<ul class="rating-scale">
+						<li id="item1">1</li>
+						<li id="item2">2</li>
+						<li id="item3">3</li>
+						<li id="item4">4</li>
+						<li id="item5">5</li>
 					</ul>
 				</div>
 				
-				<button>Submit</button>
+				<button id="submit">Submit</button>
 			</div>
 			<!-- Rating state end -->
 
 			<!-- Thank you state start -->
-			<div class="state text-center">
-				<div>You selected <span class="user-rating"></span> out of 5</div>
+			<div class="state text-center hidden">
+				<div class="pb-3">
+					<img class="machine" src="./src/images/illustration-thank-you.svg" alt="illustration-thank-you">
+				</div>
 
-				<h1>Thank you!</h1>
+				<div class="rating-container">You selected <span class="user-rating"></span> out of 5</div>
+
+				<h1 class="pt-2">Thank you!</h1>
 	
 				We appreciate you taking the time to give a rating. If you ever need more support, 
 				don’t hesitate to get in touch!
