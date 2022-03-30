@@ -1,4 +1,16 @@
+.star {
+	
+}
+
+.star_image {
+	background-color: $color-dark-blue;
+	padding: 15px;
+	border-radius: 100px;
+	//height: 30px;
+}
+
 .card {
+	background-color: blue;
 	border-radius: 20px;
 	padding: 2rem;
 	width: 90%;
@@ -7,4 +19,24 @@
 
 .state {
 	display: none;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+
+	li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		//background: rgba(124, 135, 152, 0.1);
+		background-color: $color-orange;
+		color: $color-light-grey;
+		height: 2.35rem;
+		width: 2.35rem;
+		padding: 1rem;
+		border-radius: 100px;
+		cursor: pointer;
+	}
 }

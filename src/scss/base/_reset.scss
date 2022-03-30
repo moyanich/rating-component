@@ -22,6 +22,7 @@ body {
 	font-family: $text-main-font;
 	font-size: $fs-default;
 	color: $text-color;
+	background-color: $color-very-dark-blue;
 	line-height: 1.5;
 }
 
@@ -36,32 +37,10 @@ a {
 	color: inherit;
 }
 
-.bg-dark {
-	background-color: $color-very-dark-blue;
-}
-
-.bg-dark2 {
-	background-color: $color-dark-blue;
-}
-
-
-.text-white {
-      color: $color-white;
-}
-
-.text-center {
-      text-align: center;
-}
-
-.uppercase {
-      text-transform: uppercase;
-}
-
-.hidden {
-	display: none;
-}
-
 .pb-3 {
     padding-bottom: 3rem;
 }
 
+.pt-2 {
+	padding-top: 2rem;
+}

@@ -21,6 +21,7 @@ body {
   font-family: "Overpass", sans-serif;
   font-size: 15px;
   color: #959eac;
+  background-color: #121417;
   line-height: 1.5;
 }
 
@@ -35,32 +36,12 @@ a {
   color: inherit;
 }
 
-.bg-dark {
-  background-color: #121417;
-}
-
-.bg-dark2 {
-  background-color: #252d37;
-}
-
-.text-white {
-  color: white;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.hidden {
-  display: none;
-}
-
 .pb-3 {
   padding-bottom: 3rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
 }
 
 body {
@@ -70,6 +51,7 @@ body {
 
 h1 {
   color: white;
+  font-weight: 700;
 }
 
 p {
@@ -102,7 +84,30 @@ p {
           flex-direction: column;
 }
 
+button {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  background-color: #fb7413;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 0.9rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.star_image {
+  background-color: #252d37;
+  padding: 15px;
+  border-radius: 100px;
+}
+
 .card {
+  background-color: blue;
   border-radius: 20px;
   padding: 2rem;
   width: 90%;
@@ -112,34 +117,32 @@ p {
   display: none;
 }
 
-/*
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-
-@import 'vendors/bootstrap';
-@import 'vendors/jquery-ui';
-
-@import 'base/reset';
-@import 'base/typography';
-
-@import 'layout/navigation';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/forms';
-
-@import 'components/buttons';
-@import 'components/carousel';
-@import 'components/slider';
-
-@import 'pages/home';
-@import 'pages/about';
-@import 'pages/contact';
-
-@import 'themes/theme';
-@import 'themes/admin';
-
-*/
+ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fb7413;
+  color: #959eac;
+  height: 2.35rem;
+  width: 2.35rem;
+  padding: 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
