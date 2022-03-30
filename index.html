@@ -10,35 +10,44 @@
 
 	<link rel="stylesheet" type="text/css" href="./dist/css/main.css" />
 </head>
-<body>
+<body class="bg-dark">
 
-	<div class="container bg-dark">
-		<div class="box-1"> A </div>
-		<div class="box-2"> B </div>
-		<div class="box-3"> C </div>
+	<div class="container d-flex">
+		<div class="card bg-dark2">
+
+			<!-- Rating state start -->
+			<div class="rating-state">
+				<h1>How did we do?</h1>
+
+				<p>Please let us know how we did with your support request. All feedback is appreciated 
+				to help us improve our offering!</p>
+				<div class="ratings">
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+					</ul>
+
+				</div>
+				
+				<button>Submit</button>
+
+			</div>
+			<!-- Rating state end -->
+
+			<!-- Thank you state start -->
+
+			<div class="state">
+				You selected <!-- Add rating here --> out of 5
+
+				Thank you!
 	
-
-		<!-- Rating state start -->
-
-		How did we do?
-
-		Please let us know how we did with your support request. All feedback is appreciated 
-		to help us improve our offering!
-
-		1 2 3 4 5
-
-		Submit
-
-		<!-- Rating state end -->
-
-		<!-- Thank you state start -->
-
-		You selected <!-- Add rating here --> out of 5
-
-		Thank you!
-
-		We appreciate you taking the time to give a rating. If you ever need more support, 
-		don’t hesitate to get in touch!
+				We appreciate you taking the time to give a rating. If you ever need more support, 
+				don’t hesitate to get in touch!
+			</div>
+		</div>
 	</div>
 
   	<!-- Thank you state end -->

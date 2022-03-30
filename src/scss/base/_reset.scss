@@ -40,6 +40,11 @@ a {
 	background-color: $color-very-dark-blue;
 }
 
+.bg-dark2 {
+	background-color: $color-dark-blue;
+}
+
+
 .text-white {
       color: $color-white;
 }
@@ -48,13 +53,8 @@ a {
       text-align: center;
 }
 
-
 .uppercase {
       text-transform: uppercase;
-}
-.container {
-	max-width: $max-width;
-	margin: 0 auto;
 }
 
 .hidden {

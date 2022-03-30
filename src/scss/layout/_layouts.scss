@@ -1,9 +1,15 @@
 .container {
+	//width: $max-width;
+	width: $mobile-width;
+	max-width: $max-width;
 	height: 100vh;
+	margin: 0 auto;
 }
 
 .d-flex {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .flex-col {
